@@ -31,6 +31,6 @@ body {
  flex: 1
 }
 
-.task__step span{
+ span{
   font-weight: bold;
 }
