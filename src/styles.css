@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
+.task {
+}
+
+.task .task__step {
+  display: flex;
+  flex-direction: row;
+}
