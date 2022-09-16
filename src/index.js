@@ -1,21 +1,22 @@
 import "./styles.css";
 
-const detail = {
+let detail = {
   length: 350,
   width: 250,
-  lt: {},
-  lb: {},
+  lt: { radius: 0 },
+  lb: { radius: 0 },
   rt: { radius: 50 },
-  rb: {}
+  rb: { radius: 0 }
 };
 
 {
-  //your code here....
   const app = document.getElementById("app");
+  const heightInput = document.getElementById("heightInput");
+  const widthInput = document.getElementById("widthInput");
   const leftAngleInput = document.getElementById("leftAngleInput");
   const rotateZ = document.getElementById("rotateZ");
 
-
+  //your code here....
   
 }
 
