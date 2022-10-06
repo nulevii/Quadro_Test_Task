@@ -1,1 +1,426 @@
-{"id":"src/index.js","dependencies":[{"name":"D:\\test\\package.json","includedInParent":true,"mtime":1637233832130},{"name":"./styles.css","loc":{"line":1,"column":7},"parent":"D:\\test\\src\\index.js","resolved":"D:\\test\\src\\styles.css"}],"generated":{"js":"\"use strict\";\n\nrequire(\"./styles.css\");\n\nvar detail = {\n  length: 350,\n  width: 250,\n  lt: {},\n  lb: {},\n  rt: {\n    radius: 50\n  },\n  rb: {}\n};\n{\n  //your code here....\n  var app = document.getElementById(\"app\");\n  var leftAngleInput = document.getElementById(\"leftAngleInput\");\n  var rotateZ = document.getElementById(\"rotateZ\");\n}"},"sourceMaps":{"js":{"mappings":[{"generated":{"line":3,"column":0},"source":"src/index.js","original":{"line":1,"column":0}},{"generated":{"line":5,"column":0},"source":"src/index.js","original":{"line":3,"column":0}},{"name":"detail","generated":{"line":5,"column":4},"source":"src/index.js","original":{"line":3,"column":6}},{"generated":{"line":5,"column":10},"source":"src/index.js","original":{"line":3,"column":12}},{"generated":{"line":5,"column":13},"source":"src/index.js","original":{"line":3,"column":15}},{"name":"length","generated":{"line":6,"column":0},"source":"src/index.js","original":{"line":4,"column":2}},{"name":"length","generated":{"line":6,"column":2},"source":"src/index.js","original":{"line":4,"column":2}},{"generated":{"line":6,"column":8},"source":"src/index.js","original":{"line":4,"column":8}},{"generated":{"line":6,"column":10},"source":"src/index.js","original":{"line":4,"column":10}},{"generated":{"line":6,"column":13},"source":"src/index.js","original":{"line":3,"column":15}},{"name":"width","generated":{"line":7,"column":0},"source":"src/index.js","original":{"line":5,"column":2}},{"name":"width","generated":{"line":7,"column":2},"source":"src/index.js","original":{"line":5,"column":2}},{"generated":{"line":7,"column":7},"source":"src/index.js","original":{"line":5,"column":7}},{"generated":{"line":7,"column":9},"source":"src/index.js","original":{"line":5,"column":9}},{"generated":{"line":7,"column":12},"source":"src/index.js","original":{"line":3,"column":15}},{"name":"lt","generated":{"line":8,"column":0},"source":"src/index.js","original":{"line":6,"column":2}},{"name":"lt","generated":{"line":8,"column":2},"source":"src/index.js","original":{"line":6,"column":2}},{"generated":{"line":8,"column":4},"source":"src/index.js","original":{"line":6,"column":4}},{"generated":{"line":8,"column":6},"source":"src/index.js","original":{"line":6,"column":6}},{"generated":{"line":8,"column":8},"source":"src/index.js","original":{"line":3,"column":15}},{"name":"lb","generated":{"line":9,"column":0},"source":"src/index.js","original":{"line":7,"column":2}},{"name":"lb","generated":{"line":9,"column":2},"source":"src/index.js","original":{"line":7,"column":2}},{"generated":{"line":9,"column":4},"source":"src/index.js","original":{"line":7,"column":4}},{"generated":{"line":9,"column":6},"source":"src/index.js","original":{"line":7,"column":6}},{"generated":{"line":9,"column":8},"source":"src/index.js","original":{"line":3,"column":15}},{"name":"rt","generated":{"line":10,"column":0},"source":"src/index.js","original":{"line":8,"column":2}},{"name":"rt","generated":{"line":10,"column":2},"source":"src/index.js","original":{"line":8,"column":2}},{"generated":{"line":10,"column":4},"source":"src/index.js","original":{"line":8,"column":4}},{"generated":{"line":10,"column":6},"source":"src/index.js","original":{"line":8,"column":6}},{"name":"radius","generated":{"line":11,"column":0},"source":"src/index.js","original":{"line":8,"column":8}},{"name":"radius","generated":{"line":11,"column":4},"source":"src/index.js","original":{"line":8,"column":8}},{"generated":{"line":11,"column":10},"source":"src/index.js","original":{"line":8,"column":14}},{"generated":{"line":11,"column":12},"source":"src/index.js","original":{"line":8,"column":16}},{"generated":{"line":12,"column":0},"source":"src/index.js","original":{"line":8,"column":6}},{"generated":{"line":12,"column":3},"source":"src/index.js","original":{"line":3,"column":15}},{"name":"rb","generated":{"line":13,"column":0},"source":"src/index.js","original":{"line":9,"column":2}},{"name":"rb","generated":{"line":13,"column":2},"source":"src/index.js","original":{"line":9,"column":2}},{"generated":{"line":13,"column":4},"source":"src/index.js","original":{"line":9,"column":4}},{"generated":{"line":13,"column":6},"source":"src/index.js","original":{"line":9,"column":6}},{"generated":{"line":14,"column":0},"source":"src/index.js","original":{"line":3,"column":15}},{"generated":{"line":14,"column":1},"source":"src/index.js","original":{"line":3,"column":0}},{"generated":{"line":15,"column":0},"source":"src/index.js","original":{"line":12,"column":0}},{"generated":{"line":16,"column":0},"source":"src/index.js","original":{"line":13,"column":2}},{"generated":{"line":17,"column":0},"source":"src/index.js","original":{"line":14,"column":2}},{"name":"app","generated":{"line":17,"column":6},"source":"src/index.js","original":{"line":14,"column":8}},{"generated":{"line":17,"column":9},"source":"src/index.js","original":{"line":14,"column":11}},{"name":"document","generated":{"line":17,"column":12},"source":"src/index.js","original":{"line":14,"column":14}},{"generated":{"line":17,"column":20},"source":"src/index.js","original":{"line":14,"column":22}},{"name":"getElementById","generated":{"line":17,"column":21},"source":"src/index.js","original":{"line":14,"column":23}},{"generated":{"line":17,"column":35},"source":"src/index.js","original":{"line":14,"column":14}},{"generated":{"line":17,"column":36},"source":"src/index.js","original":{"line":14,"column":38}},{"generated":{"line":17,"column":41},"source":"src/index.js","original":{"line":14,"column":14}},{"generated":{"line":17,"column":42},"source":"src/index.js","original":{"line":14,"column":2}},{"generated":{"line":18,"column":0},"source":"src/index.js","original":{"line":15,"column":2}},{"name":"leftAngleInput","generated":{"line":18,"column":6},"source":"src/index.js","original":{"line":15,"column":8}},{"generated":{"line":18,"column":20},"source":"src/index.js","original":{"line":15,"column":22}},{"name":"document","generated":{"line":18,"column":23},"source":"src/index.js","original":{"line":15,"column":25}},{"generated":{"line":18,"column":31},"source":"src/index.js","original":{"line":15,"column":33}},{"name":"getElementById","generated":{"line":18,"column":32},"source":"src/index.js","original":{"line":15,"column":34}},{"generated":{"line":18,"column":46},"source":"src/index.js","original":{"line":15,"column":25}},{"generated":{"line":18,"column":47},"source":"src/index.js","original":{"line":15,"column":49}},{"generated":{"line":18,"column":63},"source":"src/index.js","original":{"line":15,"column":25}},{"generated":{"line":18,"column":64},"source":"src/index.js","original":{"line":15,"column":2}},{"generated":{"line":19,"column":0},"source":"src/index.js","original":{"line":16,"column":2}},{"name":"rotateZ","generated":{"line":19,"column":6},"source":"src/index.js","original":{"line":16,"column":8}},{"generated":{"line":19,"column":13},"source":"src/index.js","original":{"line":16,"column":15}},{"name":"document","generated":{"line":19,"column":16},"source":"src/index.js","original":{"line":16,"column":18}},{"generated":{"line":19,"column":24},"source":"src/index.js","original":{"line":16,"column":26}},{"name":"getElementById","generated":{"line":19,"column":25},"source":"src/index.js","original":{"line":16,"column":27}},{"generated":{"line":19,"column":39},"source":"src/index.js","original":{"line":16,"column":18}},{"generated":{"line":19,"column":40},"source":"src/index.js","original":{"line":16,"column":42}},{"generated":{"line":19,"column":49},"source":"src/index.js","original":{"line":16,"column":18}},{"generated":{"line":19,"column":50},"source":"src/index.js","original":{"line":16,"column":2}},{"generated":{"line":20,"column":0},"source":"src/index.js","original":{"line":20,"column":1}}],"sources":{"src/index.js":"import \"./styles.css\";\r\n\r\nconst detail = {\r\n  length: 350,\r\n  width: 250,\r\n  lt: {},\r\n  lb: {},\r\n  rt: { radius: 50 },\r\n  rb: {}\r\n};\r\n\r\n{\r\n  //your code here....\r\n  const app = document.getElementById(\"app\");\r\n  const leftAngleInput = document.getElementById(\"leftAngleInput\");\r\n  const rotateZ = document.getElementById(\"rotateZ\");\r\n\r\n\r\n  \r\n}\r\n\r\n"},"lineCount":null}},"error":null,"hash":"3e659cd1822f4abb5e729c85cf2e6d3f","cacheData":{"env":{}}}
+{
+  "id": "src/index.js",
+  "dependencies": [
+    {
+      "name": "D:\\test\\package.json",
+      "includedInParent": true,
+      "mtime": 1637233832130
+    },
+    {
+      "name": "./styles.css",
+      "loc": { "line": 1, "column": 7 },
+      "parent": "D:\\test\\src\\index.js",
+      "resolved": "D:\\test\\src\\styles.css"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nrequire(\"./styles.css\");\n\nvar detail = {\n  length: 350,\n  width: 250,\n  lt: {},\n  lb: {},\n  rt: {\n    radius: 50\n  },\n  rb: {}\n};\n{\n  //your code here....\n  var app = document.getElementById(\"app\");\n  var rightAngleInput = document.getElementById(\"rightAngleInput\");\n  var rotateZ = document.getElementById(\"rotateZ\");\n}"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 3, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 5, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "name": "detail",
+          "generated": { "line": 5, "column": 4 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 6 }
+        },
+        {
+          "generated": { "line": 5, "column": 10 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 12 }
+        },
+        {
+          "generated": { "line": 5, "column": 13 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "name": "length",
+          "generated": { "line": 6, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "name": "length",
+          "generated": { "line": 6, "column": 2 },
+          "source": "src/index.js",
+          "original": { "line": 4, "column": 2 }
+        },
+        {
+          "generated": { "line": 6, "column": 8 },
+          "source": "src/index.js",
+          "original": { "line": 4, "column": 8 }
+        },
+        {
+          "generated": { "line": 6, "column": 10 },
+          "source": "src/index.js",
+          "original": { "line": 4, "column": 10 }
+        },
+        {
+          "generated": { "line": 6, "column": 13 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "name": "width",
+          "generated": { "line": 7, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 5, "column": 2 }
+        },
+        {
+          "name": "width",
+          "generated": { "line": 7, "column": 2 },
+          "source": "src/index.js",
+          "original": { "line": 5, "column": 2 }
+        },
+        {
+          "generated": { "line": 7, "column": 7 },
+          "source": "src/index.js",
+          "original": { "line": 5, "column": 7 }
+        },
+        {
+          "generated": { "line": 7, "column": 9 },
+          "source": "src/index.js",
+          "original": { "line": 5, "column": 9 }
+        },
+        {
+          "generated": { "line": 7, "column": 12 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "name": "lt",
+          "generated": { "line": 8, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "name": "lt",
+          "generated": { "line": 8, "column": 2 },
+          "source": "src/index.js",
+          "original": { "line": 6, "column": 2 }
+        },
+        {
+          "generated": { "line": 8, "column": 4 },
+          "source": "src/index.js",
+          "original": { "line": 6, "column": 4 }
+        },
+        {
+          "generated": { "line": 8, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 6, "column": 6 }
+        },
+        {
+          "generated": { "line": 8, "column": 8 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "name": "lb",
+          "generated": { "line": 9, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "name": "lb",
+          "generated": { "line": 9, "column": 2 },
+          "source": "src/index.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "generated": { "line": 9, "column": 4 },
+          "source": "src/index.js",
+          "original": { "line": 7, "column": 4 }
+        },
+        {
+          "generated": { "line": 9, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 7, "column": 6 }
+        },
+        {
+          "generated": { "line": 9, "column": 8 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "name": "rt",
+          "generated": { "line": 10, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "name": "rt",
+          "generated": { "line": 10, "column": 2 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "generated": { "line": 10, "column": 4 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 4 }
+        },
+        {
+          "generated": { "line": 10, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 6 }
+        },
+        {
+          "name": "radius",
+          "generated": { "line": 11, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "name": "radius",
+          "generated": { "line": 11, "column": 4 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 8 }
+        },
+        {
+          "generated": { "line": 11, "column": 10 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 14 }
+        },
+        {
+          "generated": { "line": 11, "column": 12 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 16 }
+        },
+        {
+          "generated": { "line": 12, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 8, "column": 6 }
+        },
+        {
+          "generated": { "line": 12, "column": 3 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "name": "rb",
+          "generated": { "line": 13, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 9, "column": 2 }
+        },
+        {
+          "name": "rb",
+          "generated": { "line": 13, "column": 2 },
+          "source": "src/index.js",
+          "original": { "line": 9, "column": 2 }
+        },
+        {
+          "generated": { "line": 13, "column": 4 },
+          "source": "src/index.js",
+          "original": { "line": 9, "column": 4 }
+        },
+        {
+          "generated": { "line": 13, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 9, "column": 6 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 15 }
+        },
+        {
+          "generated": { "line": 14, "column": 1 },
+          "source": "src/index.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 15, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 12, "column": 0 }
+        },
+        {
+          "generated": { "line": 16, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 13, "column": 2 }
+        },
+        {
+          "generated": { "line": 17, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 2 }
+        },
+        {
+          "name": "app",
+          "generated": { "line": 17, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 8 }
+        },
+        {
+          "generated": { "line": 17, "column": 9 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 11 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 17, "column": 12 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "generated": { "line": 17, "column": 20 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 22 }
+        },
+        {
+          "name": "getElementById",
+          "generated": { "line": 17, "column": 21 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 23 }
+        },
+        {
+          "generated": { "line": 17, "column": 35 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "generated": { "line": 17, "column": 36 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 38 }
+        },
+        {
+          "generated": { "line": 17, "column": 41 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "generated": { "line": 17, "column": 42 },
+          "source": "src/index.js",
+          "original": { "line": 14, "column": 2 }
+        },
+        {
+          "generated": { "line": 18, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 2 }
+        },
+        {
+          "name": "rightAngleInput",
+          "generated": { "line": 18, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 8 }
+        },
+        {
+          "generated": { "line": 18, "column": 20 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 22 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 18, "column": 23 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 25 }
+        },
+        {
+          "generated": { "line": 18, "column": 31 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 33 }
+        },
+        {
+          "name": "getElementById",
+          "generated": { "line": 18, "column": 32 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 34 }
+        },
+        {
+          "generated": { "line": 18, "column": 46 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 25 }
+        },
+        {
+          "generated": { "line": 18, "column": 47 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 49 }
+        },
+        {
+          "generated": { "line": 18, "column": 63 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 25 }
+        },
+        {
+          "generated": { "line": 18, "column": 64 },
+          "source": "src/index.js",
+          "original": { "line": 15, "column": 2 }
+        },
+        {
+          "generated": { "line": 19, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 2 }
+        },
+        {
+          "name": "rotateZ",
+          "generated": { "line": 19, "column": 6 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 8 }
+        },
+        {
+          "generated": { "line": 19, "column": 13 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 15 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 19, "column": 16 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 18 }
+        },
+        {
+          "generated": { "line": 19, "column": 24 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 26 }
+        },
+        {
+          "name": "getElementById",
+          "generated": { "line": 19, "column": 25 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 27 }
+        },
+        {
+          "generated": { "line": 19, "column": 39 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 18 }
+        },
+        {
+          "generated": { "line": 19, "column": 40 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 42 }
+        },
+        {
+          "generated": { "line": 19, "column": 49 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 18 }
+        },
+        {
+          "generated": { "line": 19, "column": 50 },
+          "source": "src/index.js",
+          "original": { "line": 16, "column": 2 }
+        },
+        {
+          "generated": { "line": 20, "column": 0 },
+          "source": "src/index.js",
+          "original": { "line": 20, "column": 1 }
+        }
+      ],
+      "sources": {
+        "src/index.js": "import \"./styles.css\";\r\n\r\nconst detail = {\r\n  length: 350,\r\n  width: 250,\r\n  lt: {},\r\n  lb: {},\r\n  rt: { radius: 50 },\r\n  rb: {}\r\n};\r\n\r\n{\r\n  //your code here....\r\n  const app = document.getElementById(\"app\");\r\n  const rightAngleInput = document.getElementById(\"rightAngleInput\");\r\n  const rotateZ = document.getElementById(\"rotateZ\");\r\n\r\n\r\n  \r\n}\r\n\r\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "3e659cd1822f4abb5e729c85cf2e6d3f",
+  "cacheData": { "env": {} }
+}

@@ -1,11 +1,10 @@
 body {
   font-family: sans-serif;
-
 }
 
-#hider {
+/* #hider {
   display: none;
-}
+} */
 
 #hider:checked + .task {
   display: none;
@@ -15,7 +14,7 @@ body {
   padding: 50px 150px;
 }
 
-.title{
+.title {
   margin: 0 auto;
 }
 
@@ -26,11 +25,27 @@ body {
   justify-content: space-between;
 }
 
-
 .task__step {
- flex: 1
+  flex: 1;
 }
 
- span{
+span {
   font-weight: bold;
+}
+
+.square {
+  width: 100vw;
+  height: 500px;
+}
+
+.svg {
+  fill: white;
+  stroke: black;
+  stroke-width: 3px;
+}
+
+.svg-text {
+  fill: black;
+  stroke: white;
+  stroke-width: 0;
 }

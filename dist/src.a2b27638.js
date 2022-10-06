@@ -197,18 +197,154 @@ require("./styles.css");
 var detail = {
   length: 350,
   width: 250,
-  lt: {},
-  lb: {},
-  rt: {
-    radius: 50
+  lt: {
+    radius: 0
   },
-  rb: {}
+  lb: {
+    radius: 0
+  },
+  rt: {
+    radius: 0
+  },
+  rb: {
+    radius: 0
+  }
 };
 {
-  //your code here....
   var app = document.getElementById("app");
-  var leftAngleInput = document.getElementById("leftAngleInput");
-  var rotateZ = document.getElementById("rotateZ");
+  var heightInput = document.getElementById("heightInput");
+  var widthInput = document.getElementById("widthInput");
+  var rightAngleInput = document.getElementById("rightAngleInput");
+  var rotateZ = document.getElementById("rotateZ"); //your code here....
+
+  var fixedHeight = 820;
+  var maxElementSize = 800;
+  var rotateSwitch = true;
+  var windowWidth = window.innerWidth;
+  var elementWidth = detail.length;
+  var elementHeight = detail.width;
+  var xPosition = windowWidth / 2 - elementWidth / 2;
+  var yPosition = elementHeight / 2 - elementHeight / 2;
+  var svgns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementsByTagName("svg")[0];
+
+  var rotate = function rotate() {
+    rotateSwitch = !rotateSwitch;
+    var _ref = [detail.lb, detail.lt, detail.rt, detail.rb];
+    detail.lt = _ref[0];
+    detail.rt = _ref[1];
+    detail.rb = _ref[2];
+    detail.lb = _ref[3];
+  };
+
+  var positionCheck = function positionCheck() {
+    if (rotateSwitch === true) {
+      elementWidth = detail.length;
+      elementHeight = detail.width;
+    }
+
+    if (rotateSwitch === false) {
+      elementWidth = detail.width;
+      elementHeight = detail.length;
+    }
+  };
+
+  var updateSvgDimentions = function updateSvgDimentions() {
+    windowWidth = window.innerWidth;
+    svg.style.width = "".concat(windowWidth, "px"); // svg.style.height = `${elementHeight + 20}px`;
+
+    svg.style.height = "".concat(fixedHeight, "px");
+    xPosition = windowWidth / 2 - elementWidth / 2;
+    yPosition = fixedHeight / 2 - elementHeight / 2;
+  };
+
+  updateSvgDimentions();
+
+  var updateData = function updateData() {
+    if (Number.isNaN(detail.length) || Number.isNaN(detail.width) || Number.isNaN(detail.rt.radius) || Number.isNaN(detail.lt.radius) || Number.isNaN(detail.rb.radius) || Number.isNaN(detail.lb.radius)) {
+      return svg.innerHTML = "<text class=\"svg-text\" x=\"$10\" y=\"375\"   font-size=\"50\" fill=\"white\">Input data is uncorrect.</text>\n      <text class=\"svg-text\" x=\"$10\" y=\"425\"  font-size=\"35\" fill=\"white\">Input data shoud contain only.</text>";
+    }
+
+    if (detail.length > maxElementSize || detail.width > maxElementSize) {
+      return svg.innerHTML = "<text class=\"svg-text\" x=\"$10\" y=\"375\"   font-size=\"50\" fill=\"white\">Input data is uncorrect.</text>\n      <text class=\"svg-text\" x=\"$10\" y=\"425\"  font-size=\"35\" fill=\"white\">Max height = ".concat(maxElementSize, ", Max width = ").concat(maxElementSize, ".</text>");
+    }
+
+    if (detail.rt.radius > elementWidth / 2 || detail.lt.radius > elementWidth / 2 || detail.rb.radius > elementWidth / 2 || detail.lb.radius > elementWidth / 2 || detail.rt.radius > elementHeight / 2 || detail.lt.radius > elementHeight / 2 || detail.rb.radius > elementHeight / 2 || detail.lb.radius > elementHeight / 2) {
+      return svg.innerHTML = "<text class=\"svg-text\" x=\"$10\"  y=\"375\"   font-size=\"50\">Input data is uncorrect.</text>\n      <text class=\"svg-text\" x=\"$10\" y=\"425\"  font-size=\"20\">Element radius can not be biger than half of the rectangle side.</text>";
+    }
+
+    var rect = document.createElementNS(svgns, "path");
+    var pathDataValue = generatePathData(xPosition, yPosition, elementWidth, elementHeight, detail.rt.radius, detail.rb.radius, detail.lb.radius, detail.lt.radius);
+    rect.setAttributeNS(null, "d", pathDataValue);
+    svg.innerHTML = "";
+    svg.appendChild(rect);
+  };
+
+  var arcParameter = function arcParameter(rx, ry, xAxisRotation, largeArcFlag, sweepFlag, x, y) {
+    return [rx, ",", ry, " ", xAxisRotation, " ", largeArcFlag, ",", sweepFlag, " ", x, ",", y].join("");
+  };
+
+  var generatePathData = function generatePathData(x, y, width, height, rt, rb, lb, lt) {
+    var data = [];
+    data.push("M" + (x + width / 2) + "," + y);
+    data.push("H" + (x + width - rt));
+
+    if (rt > 0) {
+      data.push("A" + arcParameter(rt, rt, 0, 0, 1, x + width, y + rt));
+    }
+
+    data.push("V" + (y + height - rb));
+
+    if (rb > 0) {
+      data.push("A" + arcParameter(rb, rb, 0, 0, 1, x + width - rb, y + height));
+    }
+
+    data.push("H" + (x + lb));
+
+    if (lb > 0) {
+      data.push("A" + arcParameter(lb, lb, 0, 0, 1, x + 0, y + height - lb));
+    }
+
+    data.push("V" + (y + lt));
+
+    if (lt > 0) {
+      data.push("A" + arcParameter(lt, lt, 0, 0, 1, x + lt, y + 0));
+    }
+
+    data.push("Z");
+    return data.join(" ");
+  };
+
+  updateData();
+  window.addEventListener("resize", function () {
+    positionCheck();
+    updateSvgDimentions();
+    updateData();
+  });
+  rotateZ.addEventListener("click", function () {
+    rotate();
+    positionCheck();
+    updateSvgDimentions();
+    updateData();
+  });
+  heightInput.addEventListener("input", function (e) {
+    detail.length = Number(e.target.value);
+    positionCheck();
+    updateSvgDimentions();
+    updateData();
+  });
+  widthInput.addEventListener("input", function (e) {
+    detail.width = Number(e.target.value);
+    positionCheck();
+    updateSvgDimentions();
+    updateData();
+  });
+  rightAngleInput.addEventListener("input", function (e) {
+    detail.rt.radius = Number(e.target.value);
+    positionCheck();
+    updateSvgDimentions();
+    updateData();
+  });
 }
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -238,7 +374,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54806" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52936" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
